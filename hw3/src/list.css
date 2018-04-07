@@ -1,0 +1,57 @@
+div.list{
+    background-color: white;
+    width: 20%;
+    height: 300px;
+    max-height: 700px;
+    display: flex;
+    flex-flow: column wrap;
+    margin: 20px
+}
+.list_header{
+    margin-top:2%;
+    display: flex;
+    flex-flow: row wrap;
+    height: 10%;
+}
+.detailed_score{
+    text-transform: capitalize;
+    margin-left: 5%;
+}
+.rmlist{
+    margin-left:35%;
+    font-size: 15px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    height:90%;
+    width: 10%;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    font-size:20px;
+    border: hidden;
+    
+}
+div.list_title{
+    display: flex;
+    flex-direction: row;
+}
+h.list_title{
+    margin-left:15%;  
+    width: 70%;
+    font-size: 15px;
+    text-align: center;
+    border: hidden;
+    
+}
+
+
+
+.new_a_item input{
+    height: 10%;
+    margin-left: 20%;
+    font-size: 15px;
+}
+.new_a_item button{
+    height: 10%;
+    font-size: 15px;
+}

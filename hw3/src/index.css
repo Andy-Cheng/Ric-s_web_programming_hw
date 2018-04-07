@@ -1,0 +1,33 @@
+
+#main_board{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width:100%;
+}
+
+/* general score part */
+#general_score{
+  display: flex;
+  flex-direction: row;
+  background-color: gold;
+  font-size: 25px;
+}
+#completed{
+  text-transform: capitalize;
+  margin-left: 10%;
+}
+#uncompleted{
+  text-transform: capitalize;
+  margin-left: 10%;
+}
+/* lists part */
+#lists{
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  background-color: aqua;
+  min-height: 700px;
+  width:100%;
+}

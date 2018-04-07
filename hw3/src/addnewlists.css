@@ -1,0 +1,27 @@
+.addnewlist{
+    position: relative;
+    background-color: blueviolet;
+    padding-left: 35%;
+
+}
+input{
+    border-style: outset;
+    margin: 5px;
+    width:40%;
+    height: 40px;
+    font-size:20px
+}
+button {
+    border-radius: 50%;
+
+    height:45px;
+    width: 60px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    font-size:20px
+}
+
+button:hover {
+    background-color: #3CBC8D; /* Green */
+    color: white;
+}

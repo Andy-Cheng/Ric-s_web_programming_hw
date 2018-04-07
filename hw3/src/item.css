@@ -1,0 +1,27 @@
+.item{
+    display: flex;
+    flex-direction: row;
+    background-color: green;
+    width:90%;
+    margin-left:5%;
+    max-height: 10%;
+}
+.item p{
+    line-height: 1%;
+}
+button.rm_item{
+    margin-top: 1%;
+    margin-left: 80%;
+    font-size: 15px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    height:90%;
+    width: 10%;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    font-size:20px;
+    border: hidden;
+    
+    
+}
