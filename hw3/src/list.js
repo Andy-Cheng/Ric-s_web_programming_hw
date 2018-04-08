@@ -12,6 +12,7 @@ class List extends Component{
         this.add_A_New_Item = this.add_A_New_Item.bind(this);
         this.remove_A_Item = this.remove_A_Item.bind(this);
         this.change_List_Title= this.change_List_Title.bind(this);
+        this.check_The_Item = this.check_The_Item.bind(this);
     }
     change_List_Title(e){
         let new_Title = prompt('Type your new job!', 'New Job');
@@ -31,6 +32,10 @@ class List extends Component{
     }
     remove_A_Item(id){
         this.setState(prevState => ({items: prevState.items.filter(the_Item => the_Item.id !== id)}));
+    }
+    check_The_Item(id, check){
+        let new_Checked = check? false : true;
+        this.setState(prevState => ({}));
     }
 
     render(){
@@ -59,8 +64,9 @@ class List extends Component{
                             key={item.id}
                             {...item}
                             onRemoveItem={remove_A_Item}
+                            onChecktem = {check_The_Item}
                         />)
-                    )}
+                    )}  
                 </div>
             </div>
         )
