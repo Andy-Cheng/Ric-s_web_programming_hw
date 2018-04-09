@@ -3,6 +3,7 @@ import {v4} from 'uuid';
 import PropTypes from 'prop-types'
 import './list.css'
 import Item from './item'
+import editpng from './edit.png'
 class List extends Component{
     constructor(props){
         super(props);
@@ -22,7 +23,7 @@ class List extends Component{
     }
     remove_The_List(e){
         this.props.onRemove(this.props.id);
-
+        this.props.onChangeScore(this.props.id, 0, 0);
     }
     add_A_New_Item(e){
         e.preventDefault();
@@ -79,8 +80,10 @@ class List extends Component{
                 <button className='rmlist' onClick={remove_The_List}> x</button>
                 </div>
                 <div className='list_title'>
-                    <h className='list_title'>{this.props.title}</h>
-                    <button onClick={change_List_Title}/>
+                    <div style={{width: '10%'}}>
+                        <img src={editpng} alt='edit' className='changetitlebutton' onClick={change_List_Title}/>
+                    </div>
+                        <h className='list_title'>{this.props.title}</h>
                 </div>
                 <div className='new_a_item'>
                     <form onSubmit={add_A_New_Item}>

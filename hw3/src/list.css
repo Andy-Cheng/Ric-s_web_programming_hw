@@ -1,17 +1,20 @@
 div.list{
-    background-color: white;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.692);
     width: 20%;
-    height: 300px;
-    max-height: 700px;
+    height: 20%;
     display: flex;
     flex-flow: column wrap;
-    margin: 20px
+    margin: 20px;
+    border-radius: 25px;
+    border: 2px solid black;
 }
 .list_header{
     margin-top:2%;
     display: flex;
     flex-flow: row wrap;
     height: 10%;
+
 }
 .detailed_score{
     text-transform: capitalize;
@@ -34,13 +37,13 @@ div.list{
 div.list_title{
     display: flex;
     flex-direction: row;
+    
 }
 h.list_title{
-    margin-left:15%;  
-    width: 70%;
-    font-size: 15px;
+    width: 90%;
+    font-size: 20px;
     text-align: center;
-    border: hidden;
+ 
     
 }
 
@@ -54,4 +57,11 @@ h.list_title{
 .new_a_item button{
     height: 10%;
     font-size: 15px;
+}
+
+.changetitlebutton{
+    position: relative;
+    margin-left: 10%;
+    width: 90%;
+    height: 90%;
 }
