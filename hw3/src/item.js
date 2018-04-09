@@ -5,7 +5,7 @@ import './item.css'
 
 const Item = ({id, title, checked, onRemoveItem= f => f, onChangeScoreByRemoval = f => f,onChecktem =f => f}) => {
     const removeTheItem = (e) => {
-        onRemoveItem(id, checked);
+        onRemoveItem(id);
     }
     const changeScore = (e) => {
         onChangeScoreByRemoval(checked);
@@ -20,7 +20,7 @@ const Item = ({id, title, checked, onRemoveItem= f => f, onChangeScoreByRemoval 
             <div className='each_Item' >
                 <div style={{width: '90%', marginLeft: '2%'}}  onClick={checkTheItem}>{title}</div>
                 <div onClick={changeScore}>
-                    <div style={{width: '10%'}}><button className='rm_item' onClick={removeTheItem }>x</button></div>
+                    <div style={{width: '100%'}}><button className='rm_item' onClick={removeTheItem }>x</button></div>
                 </div>
             </div>
         </li>

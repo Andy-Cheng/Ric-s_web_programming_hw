@@ -36,11 +36,8 @@ class List extends Component{
         this.props.onChangeScore(this.props.id, this.props.done, new_unDone);
     }
     remove_A_Item(id){
-        this.setState(prevState => {prevState.items.filter(item => item.id !== id)});
-        console.log(this.state.items)
-
+        this.setState(prevState => ({items: prevState.items.filter(item => item.id !== id)}));
     }
-
     remove_And_Change_Scores(check){
         if(check){
             let new_done = this.props.done -1 ;
@@ -61,7 +58,7 @@ class List extends Component{
                 }
             }
             let items = prevState.items;
-            return  {items};
+            return  {items: items};
         });
         if(check){
             this.props.onChangeScore(this.props.id, (this.props.done -1), (this.props.undone +1));
