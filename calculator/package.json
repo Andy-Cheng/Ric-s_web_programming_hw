@@ -1,0 +1,27 @@
+{
+  "name": "calculator-app",
+  "version": "0.0.1",
+  "description": "In-class React.js practice. Using create-react-app",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "jest",
+    "eject": "react-scripts eject",
+    "lint": "eslint src"
+  },
+  "devDependencies": {
+    "babel-preset-latest": "^6.16.0",
+    "babel-preset-react": "^6.16.0",
+    "jest-cli": "^22.4.3",
+    "enzyme": "^3.3.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.7.0"
+  },
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-scripts": "1.1.4"
+  }
+}
