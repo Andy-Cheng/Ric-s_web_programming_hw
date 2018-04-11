@@ -1,28 +1,3 @@
-# calculator-starter
-In-class React practice. Using babel, react
-
-## install
-```
-npm install
-```
-
-## build
-```
-npm run build
-```
-
-## start
-```
-npm start
-```
-Then go to `http://localhost:3000`
-
-## lint
-```
-npm run lint
-```
-
-## test
-```
-npm test
-```
+This is the in-class practice of Ric's web programming course.
+I temporarily implement addition, substraction, mutiplication and division.
+More functions will be implemented in the future.
