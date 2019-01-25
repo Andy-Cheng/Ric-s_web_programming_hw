@@ -1,8 +1,9 @@
 ## HW4 Chatroom
-Please run 
+### To install
 ```
     npm install
 ```
+### To start
 ```
     npm run dev
 ```

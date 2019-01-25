@@ -1,7 +1,9 @@
 ## HW5 Blog
+### To install
 ```
     npm install
 ```
+### To start
 1. In the terminal:
 ```
     mysql -u root -p
