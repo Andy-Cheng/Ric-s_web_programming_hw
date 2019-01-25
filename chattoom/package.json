@@ -1,0 +1,29 @@
+{
+  "name": "chatroom",
+  "version": "",
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-icons": "^2.2.5",
+    "react-scripts": "1.0.11",
+    "socket.io": "^2.0.3",
+    "uuid": "^3.1.0"
+  },
+  "scripts": {
+    "start": "node src/server/index.js",
+    "dev": "concurrently 'npm run react' 'npm run server'",
+    "react": "react-scripts start",
+    "server": "nodemon src/server/index.js",
+    "build": "react-scripts build",
+    "styles": "node-sass --output-style compressed --include-path scss src/styles/index.scss src/index.css",
+    "styles:w": "nodemon -e scss -x \"npm run styles\"",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.0",
+    "node-sass": "^4.7.2",
+    "nodemon": "^1.11.0"
+  }
+}
